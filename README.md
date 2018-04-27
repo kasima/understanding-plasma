@@ -2,9 +2,10 @@
 
 ## Outline
 
-- Introduction
+- [Preface](0-preface.md)
+- [Introduction](1-introduction.md)
 - Basic concepts
-  - Merkle Trees
+  - [Merkle Trees](basic_concepts/merkle_tree.md)
   - UTXOs
   - RLP
   - ...

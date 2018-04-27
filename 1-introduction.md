@@ -46,7 +46,7 @@ All the blockchains that are children of the root are called _Plasma chains_. Ea
 
 The Plasma chain acts as a child by periodically reporting an update back to its parent chain (which can also the be the root chain). This magical update up to the parent chain takes the form of the _Merkle root of a Merkle tree of transactions_ from the most recent block of the child chain.
 
-[Take a dive into how Merkle trees work and how they're used in Plasma.](basic_concepts/merkle_trees.md)
+[Take a dive into how Merkle trees work and how they're used in Plasma.](basic_concepts/merkle_tree.md)
 
 ### As a parent chain
 
