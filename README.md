@@ -7,6 +7,7 @@
   - Merkle Trees
   - UTXOs
   - RLP
+  - ...
 - How Plasma Works (happy paths)
   - Root chain
   - Child chain
@@ -14,7 +15,9 @@
   - Exits
 - Faults and Mitigations (sad paths)
   - Block witholding
-  - Double spends
+  - Faulty Exits
+  - Invalid child block
+  - ...
 - Specifications
   - Plasma MVP
     - Single child chain
