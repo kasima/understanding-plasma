@@ -20,7 +20,7 @@ In the most general case, Plasma describes the interaction of a tree of blockcha
 
 [ XXX - add graphic ]
 
-Going from the leaves to the root of the tree, each chain periodically submits a summary update of its state to the parent chain. Eventually, the update of all the updates get submitted to a root chain (e.g. Ethereum). Conceptually, this is much like MapReduce. We map the update procedure through the tree and repeatedly reduce the results.
+Going from the leaf chains to the root of the tree, each chain periodically submits a summary update of its state to the parent chain. Eventually, the update of all the updates get submitted to a root chain (e.g. Ethereum). Conceptually, this is much like MapReduce. We map the update procedure through the tree and repeatedly reduce the results.
 
 By doing this, we extend the security of the root chain to the entire structure of blockchains. The blockchains that are the children of the root can operate concurrently and :boom:, billions of transactions per second. Easy!
 
@@ -51,10 +51,6 @@ The Plasma chain acts as a child by periodically reporting an update back to its
 ### As a parent chain
 
 The Plasma chain can act as a parent chain just like the root chain. It offers the same functionality as the root chain. For practical reasons, it does not have to support the exact same protocol (e.g. Ethereum ABI calls). Each parent-child chain's protocol is up to that pair.
-
-
-## Security
-
 
 
 ## Summary
