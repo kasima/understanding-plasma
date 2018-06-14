@@ -2,24 +2,31 @@
 
 ## Outline
 
-- Introduction
+- [Preface](0-preface.md)
+- [Introduction](1-introduction.md)
 - Basic concepts
-  - Merkle Trees
+  - [Merkle Trees](basic_concepts/merkle_tree.md)
   - UTXOs
   - RLP
-  - Fraud proofs
-- How Plasma Works
+  - ...
+- How Plasma Works (happy paths)
   - Root chain
   - Child chain
-  - Root/Child interaction
-  - Parent/Child interaction
+  - New transactions
   - Exits
-- Attacks and Mitigations
+- Faults and Mitigations (sad paths)
   - Block witholding
-  - Double spends
+  - Faulty Exits
+  - Invalid child block
+  - ...
 - Specifications
   - Plasma MVP
     - Single child chain
     - 2 inputs / 2 outputs
     - 14 day exit window
   - Plasma Cash
+    - non-fungible
+    - no confirmations
+- Implementations
+  - omisego/plasma-mvp
+  - omisego/plasma-cash
