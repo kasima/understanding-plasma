@@ -9,7 +9,7 @@
 
 ## Properties
 
-Merkle trees allow you to verify data at a leaf node efficiently.
+Merkle trees allow you to verify data at a leaf node efficiently through what's called a _proof of inclusion_.
 
 Say you have the root hash. To verify the data at a leaf node provided to you, you only need the sibling hashes of the branch path to get to the root:
 

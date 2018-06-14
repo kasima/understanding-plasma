@@ -2,7 +2,7 @@
 
 ## Who am I?
 
-My interest in Bitcoin started while I was working at GitHub in 2013. As part of the billing team (aptly named "gitcoin"), one of the projects we worked on was to make it easier for people around the world to subscribe. That opened the door to understanding just how hard it is for large parts of the world to participate in a credit card based system – something we take for granted in the West. I got excited about Bitcoin for its potential as a global payment network.
+My interest in Bitcoin started while I was working at GitHub in 2013. As part of the billing team (aptly named "gitcoin", no relation to [gitcoin.co](https://gitcoin.co/) :wink:), one of the projects we worked on was to make it easier for people around the world to subscribe. That opened the door to understanding just how hard it is for large parts of the world to participate in a credit card based system – something we take for granted in the West. I got excited about Bitcoin for its potential as a global payment network.
 
 It took me another four years before catching the "crypto bug." Thus began my descent down the rabbit hole. I eventually found my way to OmiseGO to help bring the network to production. OmiseGO is essentially building a decentralized payment network using Plasma, a proposed scaling solution for Ethereum.
 

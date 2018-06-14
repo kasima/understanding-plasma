@@ -20,7 +20,7 @@ In the most general case, Plasma describes the interaction of a tree of blockcha
 
 [ XXX - add graphic ]
 
-Going from the leaf chains to the root of the tree, each chain periodically submits a summary update of its state to the parent chain. Eventually, the update of all the updates get submitted to a root chain (e.g. Ethereum). Conceptually, this is much like MapReduce. We map the update procedure through the tree and repeatedly reduce the results.
+Doing a depth-first traversal of the tree, each chain periodically submits a summary update of its state to the parent chain. Eventually, the update of all the updates get submitted to a root chain (e.g. Ethereum).
 
 By doing this, we extend the security of the root chain to the entire structure of blockchains. The blockchains that are the children of the root can operate concurrently and :boom:, billions of transactions per second. Easy!
 
@@ -33,7 +33,7 @@ I know I'm being pretty hand wavy about all of this right now. Don't worry, I'll
 
 Plasma is blockchain agnostic for its root chain. The purpose of the root chain is to secure the entire Plasma structure. It's a design pattern that can be implemented on any blockchain that can support the interaction between a first-level child chain and the root chain.
 
-Given that the implementation and design details of Plasma are currently under active research by many teams, the protocol between a child chain and root chain is in flux. Since it's in flux, we need a root chain that can support a changing protocol and that means using a root chain that can support smart contracts.
+Given that the implementation and design details of Plasma are currently under active research by multiple teams, the protocol between a child chain and root chain is in flux. Since it's in flux, we need a root chain that can support a changing protocol and that means using a root chain that can support smart contracts.
 
 At OmiseGO and for the rest of these posts, we'll be using Ethereum as our root chain. That means we'll be using Solidity as our smart contract language in the examples.
 
@@ -44,7 +44,7 @@ All the blockchains that are children of the root are called _Plasma chains_. Ea
 
 ### As a child chain
 
-The Plasma chain acts as a child by periodically reporting an update back to its parent chain (which can also the be the root chain). This magical update up to the parent chain takes the form of the _Merkle root of a Merkle tree of transactions_ from the most recent block of the child chain.
+The Plasma chain acts as a child by periodically reporting an update back to its parent chain (which can also the be the root chain). This update needs to be able to prove inclusion of the data in the child chain. For many of the Plasma specifications so far (e.g. Plasma MVP), this magical update up to the parent chain takes the form of the _Merkle root of a Merkle tree of transactions_ from the most recent block of the child chain.
 
 [Take a dive into how Merkle trees work and how they're used in Plasma.](basic_concepts/merkle_tree.md)
 
